@@ -1,0 +1,23 @@
+
+/**
+ * @Elchwis
+ * 
+ * Con motivo de repaso a la implementacion del "Embeded if "
+ * se escribió la linea de codigo indicada
+ */
+
+public class contrasena
+{
+    //Metodo de prueba
+    public static void main (String []args){
+        String xdefecto = "abcd1";
+        
+        verificacion(args[0], xdefecto);
+        
+    }
+    
+    //Metodo que verifica la contraseña
+    public static void verificacion( String cont, String xdefecto){
+         System.out.println(xdefecto.equals(cont) ? "si jaló" : "No jaló");  //Embeded if
+    }
+}
