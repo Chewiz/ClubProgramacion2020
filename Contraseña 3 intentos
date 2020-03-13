@@ -1,0 +1,51 @@
+
+/**
+ * @Elchwis
+ * 
+ */
+import java.util.Scanner;
+
+
+public class contrasena3intentos
+{
+    //Metodo de prueba
+    public static void main (String []args){
+        String xdefecto = "abcd1";
+        
+        verificacion(xdefecto);
+        
+    }
+    
+    //Metodo que verifica la contraseña
+    public static void verificacion(String xdefecto){
+         Scanner read = new Scanner(System.in);
+         String cont = " ";
+         
+        for(int i = 0; i < 3; i++){
+            System.out.println("Intento numero "+ (i+1));
+            cont = read.nextLine();
+            System.out.println(xdefecto.equals(cont) ? "si jaló" : "No jaló" ); 
+            if(xdefecto.equals(cont))
+                i =3;
+            //Usando el Embede if 
+        }
+        
+        /*
+         for(int i = 0; i < 3; i++){
+           System.out.println("Intento numero "+ (i+1));
+           cont = read.nextLine();
+           if(xdefecto.equals(cont)){
+               System.out.println("Si jaló");
+               i =3;
+           }else
+               System.out.println("No jaló");
+             
+
+         }
+         */
+        
+        
+        
+        
+    }
+}
